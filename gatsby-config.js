@@ -5,5 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+  // siteMetaData: {
+  //   title: 'Valerie Ernst',
+  //   description: 'Personal Website',
+  // },
+  plugins: [
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-react-helmet',
+  ],
+};
