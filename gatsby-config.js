@@ -5,12 +5,12 @@
  */
 
 module.exports = {
-  // siteMetaData: {
-  //   title: 'Valerie Ernst',
-  //   description: 'Personal Website',
-  // },
-  plugins: [
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-react-helmet',
-  ],
+    siteMetadata: {
+        title: 'Valerie Ernst',
+        description: 'A site to see our 2020 travels!',
+    },
+    plugins: [
+        'gatsby-plugin-emotion',
+        'gatsby-plugin-react-helmet',
+    ],
 };

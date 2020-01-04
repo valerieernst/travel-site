@@ -1,3 +1,26 @@
-import React from "react"
+import React from 'react';
+import Section from '../components/Section';
+import Layout from '../components/Layout';
 
-export default () => <div>Hello world!</div>
+const places = [
+    'San Francisco, USA',
+    'New Delhi, India',
+    'Sydney, Australia',
+    'Ho Chi Mihn City, Vietnam',
+    'Tel Aviv, Israel',
+    'Berlin, Germany',
+    'Porto, Portugal',
+];
+
+export default () => (
+    <Layout length={places.length}>
+        {places.map((place, idx) => (
+            <Section
+                id={idx}
+                isLast={places.length - 1 === idx}
+            >
+                <h1>{place}</h1>
+            </Section>
+        ))}
+    </Layout>
+);
